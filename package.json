@@ -1,0 +1,33 @@
+{
+  "name": "scale-to-fit",
+  "version": "1.0.0",
+  "description": "Given 2D view bounds and content bounds, gives you a 3x3 transformation matrix that will scale and translate the content such that it fits to the view.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/scale-to-fit.git"
+  },
+  "keywords": [
+    "scale",
+    "fit",
+    "2D",
+    "transform",
+    "SVG"
+  ],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/scale-to-fit/issues"
+  },
+  "homepage": "https://github.com/jimkang/scale-to-fit",
+  "devDependencies": {
+    "tape": "^4.6.0",
+    "browserify": "^8.1.3",
+    "uglify-js": "^2.4.17"
+  },
+  "dependencies": {
+  }
+}
