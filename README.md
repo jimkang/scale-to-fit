@@ -63,7 +63,7 @@ Once we fill in the matrix with p, x0, y0, x, and y for (3, 7) and again for (10
 
 This is a graph of the results:
 
-![example problem result graphed](metal/example-problem-result-graphed.jpg)
+![example problem result graphed](meta/example-problem-result-graphed.jpg)
 
 Development
 -------------
