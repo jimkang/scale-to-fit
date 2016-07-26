@@ -53,7 +53,7 @@ Working backwards from an example in which we want content that goes from (1, 1)
 
 ![matrix](meta/algorithm.jpg)
 
-Here is that transformation exercised by an example in which we want to scale content bounded by (3, 7) and (10, 13) to fit to a view bounded by (0, 0) to (16, 9).
+Here is a transformation for a situation in which we want to scale content bounded by (3, 7) and (10, 13) to fit to a view bounded by (0, 0) to (16, 9).
 
 ![example problem statement](meta/example-problem-statement.jpg)
 
@@ -61,7 +61,7 @@ Once we fill in the matrix with p, x0, y0, x, and y for (3, 7) and again for (10
 
 ![example problem multiplication](meta/example-problem-multiplication.jpg)
 
-This is a graph of the results:
+This is a graph of the result of the transformation applied to the content points:
 
 ![example problem result graphed](meta/example-problem-result-graphed.jpg)
 
