@@ -65,6 +65,8 @@ This is a graph of the results:
 
 ![example problem result graphed](meta/example-problem-result-graphed.jpg)
 
+(Ignore the (14.5, 9) point. That was a mistake.)
+
 Development
 -------------
 
