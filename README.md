@@ -46,6 +46,25 @@ Where `a, b, c, d, e, f` correspond to the positions in the matrix as specfied i
     b d f
     0 0 1
 
+Algorithm
+----------
+
+Working backwards from an example in which we want content that goes from (1, 1) to (2, 2) to scale to fit to view bounded by (0, 0) to (16, 9), here is the general matrix transformation we need to apply in order to scale to fit:
+
+![matrix](meta/algorithm.jpg)
+
+Here is that transformation exercised by an example in which we want to scale content bounded by (3, 7) and (10, 13) to fit to a view bounded by (0, 0) to (16, 9).
+
+![example problem statement](meta/example-problem-statement.jpg)
+
+Once we fill in the matrix with p, x0, y0, x, and y for (3, 7) and again for (10, 13), we get these multiplication operations:
+
+![example problem multiplication](meta/example-problem-multiplication.jpg)
+
+This is a graph of the results:
+
+![example problem result graphed](metal/example-problem-result-graphed.jpg)
+
 Development
 -------------
 
