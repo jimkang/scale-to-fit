@@ -5,6 +5,28 @@
 </head>
 <body>
 
+<div id="form">
+  <div id="content-fields">
+    <div>Content bounds</div>
+    <label for="content-x">x:</label>
+    <span id="content-x">50</span>
+    <label for="content-y">y:</label>
+    <input id="content-y" type="text"></input>
+  </div>
+  <div id="view-fields">
+    <div>Content</div>
+    <label for="content-x">x:</label>
+    <input id="content-x" type="text"></input>
+    <label for="content-y">y:</label>
+    <input id="content-y" type="text"></input>
+  </div>
+</div>
+
+<svg id="board">
+  <g id="untransformed"></g>
+  <g id="transformed"></g>
+</svg>
+
 <script src="workspace.js"></script>
 
 </body>
