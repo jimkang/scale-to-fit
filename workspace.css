@@ -1,3 +1,38 @@
 body {
   font-family: "helvetica neue";
+  display: flex;
+  flex-direction: row;
+  color: #333;
+}
+
+#form {
+  max-width: 20em;
+  margin-right: 1em;
+}
+
+#form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style-type: none;
+}
+
+#form li {
+  margin-bottom: 1em;
+}
+
+.fieldset-title {
+  font-size: larger;
+  margin-bottom: 1em;
+}
+
+.number-field {
+  border: 1px dashed #444;
+  padding: 0.2em;
+}
+
+#board {
+  width: 600px;
+  height: 600px;
+  border: 1px solid #666;
 }
