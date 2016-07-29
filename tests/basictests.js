@@ -6,15 +6,15 @@ var testCases = [
     opts: {
       view: {
         left: 0,
-        bottom: 0,
+        top: 0,
         right: 16,
-        top: 9
+        bottom: 9
       },
       content: {
         left: 3,
-        bottom: 7,
+        top: 7,
         right: 10,
-        top: 13
+        bottom: 13
       }
     },
     expected: {

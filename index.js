@@ -8,12 +8,12 @@ function scaleToFit(opts) {
   }
 
   var viewWidth = view.right - view.left;
-  var viewHeight = view.top - view.bottom;
+  var viewHeight = view.bottom - view.top;
   var contentWidth = content.right - content.left;
-  var contentHeight = content.top - content.bottom;
+  var contentHeight = content.bottom - content.top;
 
   var offsetX = content.left - view.left;
-  var offsetY = content.bottom - view.bottom;
+  var offsetY = content.top - view.top;
 
   var viewToContentRatioX = viewWidth/contentWidth;
   var viewToContentRatioY = viewHeight/contentHeight;

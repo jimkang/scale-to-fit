@@ -3,6 +3,8 @@ scale-to-fit
 
 Given 2D view bounds and content bounds, gives you a 3x3 transformation matrix that will scale and translate the content such that it fits to the view.
 
+Always remember: In SVG, +y is downward!
+
 Installation
 ------------
 

@@ -10,45 +10,51 @@
     <li class="fieldset-title">Content</li>
     <li>
       <span>Left:</span>
-      <span id="content-left" class="number-field">50</span>
+      <span id="content-left" class="number-field">3</span>
     </li>
     <li>
       <span>Bottom:</span>
-      <span id="content-bottom" class="number-field">50</span>
+      <span id="content-bottom" class="number-field">7</span>
     </li>
     <li>
       <span>Right:</span>
-      <span id="content-right" class="number-field">50</span>
+      <span id="content-right" class="number-field">10</span>
     </li>
     <li>
       <span>Top:</span>
-      <span id="content-top" class="number-field">50</span>
+      <span id="content-top" class="number-field">13</span>
     </li>
   </ul>
   <ul id="view-fields">
     <li class="fieldset-title">View</li>
     <li>
       <span>Left:</span>
-      <span id="view-left" class="number-field">50</span>
+      <span id="view-left" class="number-field">0</span>
     </li>
     <li>
       <span>Bottom:</span>
-      <span id="view-bottom" class="number-field">50</span>
+      <span id="view-bottom" class="number-field">0</span>
     </li>
     <li>
       <span>Right:</span>
-      <span id="view-right" class="number-field">50</span>
+      <span id="view-right" class="number-field">160</span>
     </li>
     <li>
       <span>Top:</span>
-      <span id="view-top" class="number-field">50</span>
+      <span id="view-top" class="number-field">90</span>
     </li>
   </ul>
 </div>
 
 <svg id="board">
-  <g id="untransformed"></g>
-  <g id="transformed"></g>
+  <g id="untransformed">
+    <rect class="view"></rect>
+    <rect class="content"></rect>    
+  </g>
+  <g id="transformed">
+    <rect class="view"></rect>
+    <rect class="content"></rect>    
+  </g>
 </svg>
 
 <script src="workspace.js"></script>

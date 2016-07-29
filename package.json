@@ -30,5 +30,7 @@
     "tape": "^4.6.0",
     "uglify-js": "^2.4.17"
   },
-  "dependencies": {}
+  "dependencies": {
+    "d3-selection-multi": "^0.4.1"
+  }
 }
