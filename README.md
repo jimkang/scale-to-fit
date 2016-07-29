@@ -5,7 +5,7 @@ Given 2D view bounds and content bounds, gives you a 3x3 transformation matrix t
 
 Always remember: In SVG, +y is downward!
 
-[Try a demo!](https://jimkang.com/scale-to-fit/)
+[Try a demo!](http://jimkang.com/scale-to-fit/)
 
 Installation
 ------------
