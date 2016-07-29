@@ -23,14 +23,14 @@ function scaleToFit(opts) {
     relevantRatio =  viewToContentRatioX;
   }
 
-  return {
-    a: relevantRatio,
-    b: 0,
-    c: 0,
-    d: relevantRatio,
-    e: -relevantRatio * offsetX,
-    f: -relevantRatio * offsetY
-  };
+  return [
+    relevantRatio,
+    0,
+    0,
+    relevantRatio,
+    -relevantRatio * offsetX,
+    -relevantRatio * offsetY
+  ];
 }
 
 module.exports = scaleToFit;

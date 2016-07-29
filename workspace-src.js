@@ -28,8 +28,22 @@ function render() {
   var board = d3.select('#board');
   board.selectAll('.view').attrs({
     x: opts.view.left,
-    y: opts.view.bottom,
+    y: opts.view.top,
     width: opts.view.right - opts.view.left,
-    height: opts.view.top - opts.view.bottom
+    height: opts.view.bottom - opts.view.top
   });
+
+  board.selectAll('.content').attrs({
+    x: opts.content.left,
+    y: opts.content.top,
+    width: opts.content.right - opts.content.left,
+    height: opts.content.bottom - opts.content.top
+  });
+
+  var matrixValues = scaleToFit(opts);
+  board.select('#transformed').
 }
+
+((function go() {
+  render();
+})());

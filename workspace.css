@@ -36,3 +36,15 @@ body {
   height: 600px;
   border: 1px solid #666;
 }
+
+.view {
+  fill: hsla(150, 50%, 50%, 0.5);
+}
+
+#untransformed .content {
+  fill: hsla(30, 100%, 50%, 0.5);
+}
+
+#transformed .content {
+  fill: hsla(30, 100%, 50%, 1.0);
+}

@@ -33,16 +33,16 @@ Usage
 
 Output:
 
-    {
+    [
       a: ,
       b: ,
       c: ,
       d: ,
       e: ,
       f: ,
-    }
+    ]
 
-Where `a, b, c, d, e, f` correspond to the positions in the matrix as specfied in the [SVG transform matrix definition](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform):
+Where each element in the returned array corresponds to the `a, b, c, d, e, f` positions in the matrix as specfied in the [SVG transform matrix definition](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform):
 
     a c e
     b d f
