@@ -41,7 +41,8 @@ function render() {
   });
 
   var matrixValues = scaleToFit(opts);
-  board.select('#transformed').
+  board.select('#transformed')
+    .attr('transform', 'matrix(' + matrixValues.join(', ') + ')');
 }
 
 ((function go() {

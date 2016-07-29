@@ -5,57 +5,76 @@
 </head>
 <body>
 
-<div id="form">
-  <ul id="content-fields">
-    <li class="fieldset-title">Content</li>
-    <li>
-      <span>Left:</span>
-      <span id="content-left" class="number-field">3</span>
-    </li>
-    <li>
-      <span>top:</span>
-      <span id="content-top" class="number-field">7</span>
-    </li>
-    <li>
-      <span>Right:</span>
-      <span id="content-right" class="number-field">10</span>
-    </li>
-    <li>
-      <span>Bottom:</span>
-      <span id="content-bottom" class="number-field">13</span>
-    </li>
+<section id="intro">
+  <div>
+    This is a demo of the <a href="https://github.com/jimkang/scale-to-fit">scale-to-fit</a> module.
+  </div>
+  <div>
+    The view is rendered in gray. The <strong>untransformed</strong> content rectangle is an ugly green. The scaleToFit function takes the view and untransformed content dimensions and calculates a transform that will scale and translate the content rectangle so that:
+  </div>
+  <ul>
+    <li>It fills the view along one dimension without going outside of it.</li>
+    <li>It can be seen in its entirety within the view.</li>
+    <li>It is not stretched (retains its original proportions).</li>
   </ul>
-  <ul id="view-fields">
-    <li class="fieldset-title">View</li>
-    <li>
-      <span>Left:</span>
-      <span id="view-left" class="number-field">0</span>
-    </li>
-    <li>
-      <span>top:</span>
-      <span id="view-top" class="number-field">0</span>
-    </li>
-    <li>
-      <span>Right:</span>
-      <span id="view-right" class="number-field">480</span>
-    </li>
-    <li>
-      <span>Bottom:</span>
-      <span id="view-bottom" class="number-field">270</span>
-    </li>
-  </ul>
-</div>
+  <div>
+    You can change the values of the content and untransformed view below to see what transformed content rectangles (rendered in orange) are generated. (Keep in mind that bottom must always be greater than top, and right must always be greater than left, however.)
+  </div>
+</section>
 
-<svg id="board">
+<section id="demo">
+  <div id="form">
+    <ul id="content-fields">
+      <li class="fieldset-title content-title">Content</li>
+      <li>
+        <span>Left:</span>
+        <span id="content-left" class="number-field">30</span>
+      </li>
+      <li>
+        <span>Top:</span>
+        <span id="content-top" class="number-field">70</span>
+      </li>
+      <li>
+        <span>Right:</span>
+        <span id="content-right" class="number-field">100</span>
+      </li>
+      <li>
+        <span>Bottom:</span>
+        <span id="content-bottom" class="number-field">130</span>
+      </li>
+    </ul>
+    <ul id="view-fields">
+      <li class="fieldset-title view-title">View</li>
+      <li>
+        <span>Left:</span>
+        <span id="view-left" class="number-field">0</span>
+      </li>
+      <li>
+        <span>Top:</span>
+        <span id="view-top" class="number-field">0</span>
+      </li>
+      <li>
+        <span>Right:</span>
+        <span id="view-right" class="number-field">480</span>
+      </li>
+      <li>
+        <span>Bottom:</span>
+        <span id="view-bottom" class="number-field">270</span>
+      </li>
+    </ul>
+  </div>
 
-  <g id="untransformed">
-    <rect class="view"></rect>
-    <rect class="content"></rect>    
-  </g>
-  <g id="transformed">
-    <rect class="content"></rect>    
-  </g>
-</svg>
+  <svg id="board">
+
+    <g id="untransformed">
+      <rect class="view"></rect>
+      <rect class="content"></rect>    
+    </g>
+    <g id="transformed">
+      <rect class="content"></rect>    
+    </g>
+  </svg>
+</section>
 
 <script src="workspace.js"></script>
 

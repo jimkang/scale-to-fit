@@ -5,6 +5,8 @@ Given 2D view bounds and content bounds, gives you a 3x3 transformation matrix t
 
 Always remember: In SVG, +y is downward!
 
+[Try a demo!](https://jimkang.com/scale-to-fit/)
+
 Installation
 ------------
 
@@ -53,19 +55,19 @@ Algorithm
 
 Working backwards from an example in which we want content that goes from (1, 1) to (2, 2) to scale to fit to view bounded by (0, 0) to (16, 9), here is the general matrix transformation we need to apply in order to scale to fit:
 
-![matrix](meta/algorithm.jpg)
+![matrix](https://raw.githubusercontent.com/jimkang/scale-to-fit/gh-pages/meta/algorithm.jpg)
 
 Here is a transformation for a situation in which we want to scale content bounded by (3, 7) and (10, 13) to fit to a view bounded by (0, 0) to (16, 9).
 
-![example problem statement](meta/example-problem-statement.jpg)
+![example problem statement](https://raw.githubusercontent.com/jimkang/scale-to-fit/gh-pages/meta/example-problem-statement.jpg)
 
 Once we fill in the matrix with p, x0, y0, x, and y for (3, 7) and again for (10, 13), we get these multiplication operations:
 
-![example problem multiplication](meta/example-problem-multiplication.jpg)
+![example problem multiplication](https://raw.githubusercontent.com/jimkang/scale-to-fit/gh-pages/meta/example-problem-multiplication.jpg)
 
 This is a graph of the result of the transformation applied to the content points:
 
-![example problem result graphed](meta/example-problem-result-graphed.jpg)
+![example problem result graphed](https://raw.githubusercontent.com/jimkang/scale-to-fit/gh-pages/meta/example-problem-result-graphed.jpg)
 
 (Ignore the (14.5, 9) point. That was a mistake.)
 
