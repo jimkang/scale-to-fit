@@ -25,6 +25,30 @@ var testCases = [
       -4.5,
       -10.5
     ] 
+  },
+{
+    opts: {
+      view: {
+        left: 320,
+        top: 320,
+        right: 352,
+        bottom: 352
+      },
+      content: {
+        left: 0,
+        top: 0,
+        right: 100,
+        bottom: 100
+      }
+    },
+    expected: [
+      0.32,
+      0,
+      0,
+      0.32,
+      320,
+      320
+    ]
   }
 ];
 

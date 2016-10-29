@@ -28,8 +28,8 @@ function scaleToFit(opts) {
     0,
     0,
     relevantRatio,
-    -relevantRatio * offsetX,
-    -relevantRatio * offsetY
+    view.left - content.left * relevantRatio,
+    view.top - content.top * relevantRatio
   ];
 }
 
